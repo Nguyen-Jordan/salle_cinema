@@ -11,10 +11,10 @@ CREATE TABLE employers (
     lastname VARCHAR(25) NOT NULL,
     birth_date DATE NOT NULL,
     phone_number varchar(16),
-    email VARCHAR(64) NOT NULL,
+    email VARCHAR(64) UNIQUE NOT NULL,
     password VARCHAR(20) NOT NULL,
     role_id INT NOT NULL,
-    theater_id INT NOT NULL,
+    theater_id INT,
     FOREIGN KEY (role_id) REFERENCES roles (id),
     FOREIGN KEY (theater_id) REFERENCES theaters (id)
 );

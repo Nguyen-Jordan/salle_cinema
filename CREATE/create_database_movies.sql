@@ -11,6 +11,6 @@ CREATE TABLE movies (
    year SMALLINT NOT NULL,
    synopsis TEXT(5000) NOT NULL,
    gender varchar(25) NOT NULL,
-   producer VARCHAR(25) NOT NULL,
+   director VARCHAR(25) NOT NULL,
    movie_time TIME NOT NULL
 );

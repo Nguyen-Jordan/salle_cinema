@@ -1,0 +1,16 @@
+/* Je me positionne sur la base de données souhaité */
+USE cinema_db;
+
+/* J'insère des données factices dans la table */
+INSERT INTO
+    movies (name, year, synopsis, gender, director, movie_time)
+VALUES
+    ('Pulp fiction', 1994, 'L''odyssée sanglante et burlesque de petits malfrats dans la jungle de Hollywood à travers trois histoires qui s''entremêlent.', 'Action', 'Quentin Tarantino', '02:45:00'),
+    ('Kill Bill : Volume 1', 2003, 'Au cours d''une cérémonie de mariage en plein désert, un commando fait irruption dans la chapelle et tire sur les convives. Laissée pour morte, la Mariée enceinte retrouve ses esprits après un coma de quatre ans.
+
+Celle qui a auparavant exercé les fonctions de tueuse à gages au sein du Détachement International des Vipères Assassines n''a alors plus qu''une seule idée en tête : venger la mort de ses proches en éliminant tous les membres de l''organisation criminelle, dont leur chef Bill qu''elle se réserve pour la fin. ', 'Action', 'Quentin Tarantino', '01:51:00'),
+    ('Kill Bill : Volume 2', 2004, 'Après s''être débarrassée de ses anciennes collègues Vernita Green et O-Ren Ishii, la Mariée poursuit sa quête vengeresse. Il lui reste à régler le sort de Budd puis de Elle Driver avant d''atteindre le but ultime : tuer Bill. ', 'Action', 'Quentin Tarantino', '02:17:00'),
+    ('Django Unchained', 2012, 'Dans le sud des États-Unis, deux ans avant la guerre de Sécession, le Dr King Schultz, un chasseur de primes allemand, fait l''acquisition de Django, un esclave qui peut l''aider à traquer les frères Brittle, les meurtriers qu''il recherche. Schultz promet à Django de lui rendre sa liberté lorsqu''il aura capturé les Brittle – morts ou vifs.
+Alors que les deux hommes pistent les dangereux criminels, Django n''oublie pas que son seul but est de retrouver Broomhilda, sa femme, dont il fut séparé à cause du commerce des esclaves…
+Lorsque Django et Schultz arrivent dans l''immense plantation du puissant Calvin Candie, ils éveillent les soupçons de Stephen, un esclave qui sert Candie et a toute sa confiance. Le moindre de leurs mouvements est désormais épié par une dangereuse organisation de plus en plus proche… Si Django et Schultz veulent espérer s''enfuir avec Broomhilda, ils vont devoir choisir entre l''indépendance et la solidarité, entre le sacrifice et la survie…', 'Action', 'Quentin Tarantino', '02:32:00'),
+    (' Les Huit Salopards', 2015, 'Quelques années après la Guerre de Sécession, le chasseur de primes John Ruth, dit Le Bourreau, fait route vers Red Rock, où il conduit sa prisonnière Daisy Domergue se faire pendre. Sur leur route, ils rencontrent le Major Marquis Warren, un ancien soldat lui aussi devenu chasseur de primes, et Chris Mannix, le nouveau shérif de Red Rock. Surpris par le blizzard, ils trouvent refuge dans une auberge au milieu des montagnes, où ils sont accueillis par quatre personnages énigmatiques : le confédéré, le mexicain, le cowboy et le court-sur-pattes. Alors que la tempête s''abat au-dessus du massif, l''auberge va abriter une série de tromperies et de trahisons. L''un de ces huit salopards n''est pas celui qu''il prétend être ; il y a fort à parier que tout le monde ne sortira pas vivant de l''auberge de Minnie…', 'Action', 'Quentin Tarantino', '03:07:00')
