@@ -8,6 +8,7 @@ DROP TABLE IF EXISTS auditoriums;
 CREATE TABLE auditoriums (
    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
    number TINYINT NOT NULL,
+   total_seats INT,
    theater_id INT NOT NULL,
    FOREIGN KEY (theater_id) REFERENCES theaters (id)
 );

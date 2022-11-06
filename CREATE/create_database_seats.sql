@@ -7,8 +7,9 @@ DROP TABLE IF EXISTS seats;
 /* Je crée la table seats */
 CREATE TABLE seats (
    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   number TINYINT NOT NULL,
-   avaible BOOLEAN NOT NULL,
+   avaible INT NOT NULL,
+   show_id INT NOT NULL,
    auditorium_id INT NOT NULL,
+   FOREIGN KEY (show_id) REFERENCES shows (id),
    FOREIGN KEY (auditorium_id) REFERENCES auditoriums (id)
 );
