@@ -8,11 +8,10 @@ DROP TABLE IF EXISTS tickets;
 CREATE TABLE tickets (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     date DATETIME NOT NULL,
+    total_ticket INT NOT NULL,
     total_amount DECIMAL(10,2) NOT NULL,
-    fare_id INT NOT NULL ,
     seat_id INT NOT NULL,
     costumer_id INT NOT NULL,
-    FOREIGN KEY (fare_id) REFERENCES fares (id),
     FOREIGN KEY (seat_id) REFERENCES seats (id),
     FOREIGN KEY (costumer_id) REFERENCES clients (id)
 );
