@@ -11,4 +11,6 @@ CREATE TABLE auditoriums (
    total_seats INT(11) NOT NULL ,
    theater_id INT(11) NOT NULL,
    FOREIGN KEY (theater_id) REFERENCES theaters (id)
+   ON UPDATE RESTRICT
+   ON DELETE RESTRICT
 );

@@ -9,6 +9,10 @@ CREATE TABLE pay_method_tickets (
     ticket_id INT(11) NOT NULL,
     pay_method_id INT(11) NOT NULL,
     PRIMARY KEY (ticket_id, pay_method_id),
-    FOREIGN KEY (ticket_id) REFERENCES tickets (id),
+    FOREIGN KEY (ticket_id) REFERENCES tickets (id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT,
     FOREIGN KEY (pay_method_id) REFERENCES pay_methods (id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT
 );

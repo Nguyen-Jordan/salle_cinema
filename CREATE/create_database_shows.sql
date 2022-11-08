@@ -13,4 +13,6 @@ CREATE TABLE shows (
    date_finish DATE NOT NULL,
    movie_id INT(11) NOT NULL,
    FOREIGN KEY (movie_id) REFERENCES movies (id)
+       ON UPDATE RESTRICT
+       ON DELETE RESTRICT
 );

@@ -9,6 +9,10 @@ CREATE TABLE ticket_fares (
    ticket_id INT(11) NOT NULL,
    fare_id INT(11) NOT NULL,
    PRIMARY KEY (ticket_id, fare_id),
-   FOREIGN KEY (ticket_id) REFERENCES tickets (id),
+   FOREIGN KEY (ticket_id) REFERENCES tickets (id)
+       ON UPDATE RESTRICT
+       ON DELETE RESTRICT,
    FOREIGN KEY (fare_id) REFERENCES  fares (id)
+       ON UPDATE RESTRICT
+       ON DELETE RESTRICT
 );

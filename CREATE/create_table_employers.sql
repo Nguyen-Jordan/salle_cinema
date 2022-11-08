@@ -15,6 +15,10 @@ CREATE TABLE employers (
     password VARCHAR(20) NOT NULL,
     role_id INT(11) NOT NULL,
     theater_id INT(11) NOT NULL,
-    FOREIGN KEY (role_id) REFERENCES roles (id),
+    FOREIGN KEY (role_id) REFERENCES roles (id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT,
     FOREIGN KEY (theater_id) REFERENCES theaters (id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT
 );

@@ -12,6 +12,10 @@ CREATE TABLE tickets (
     total_amount DECIMAL(10,2) NOT NULL,
     seat_id INT(11) NOT NULL,
     costumer_id INT(11) NOT NULL,
-    FOREIGN KEY (seat_id) REFERENCES seats (id),
+    FOREIGN KEY (seat_id) REFERENCES seats (id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT,
     FOREIGN KEY (costumer_id) REFERENCES clients (id)
+        ON UPDATE RESTRICT
+        ON DELETE RESTRICT
 );
