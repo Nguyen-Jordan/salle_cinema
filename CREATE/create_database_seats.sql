@@ -6,10 +6,10 @@ DROP TABLE IF EXISTS seats;
 
 /* Je crée la table seats */
 CREATE TABLE seats (
-   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   avaible INT NOT NULL,
-   show_id INT NOT NULL,
-   auditorium_id INT NOT NULL,
+   id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   avaible INT(11) NOT NULL,
+   show_id INT(11) NOT NULL,
+   auditorium_id INT(11) NOT NULL,
    FOREIGN KEY (show_id) REFERENCES shows (id),
    FOREIGN KEY (auditorium_id) REFERENCES auditoriums (id)
 );

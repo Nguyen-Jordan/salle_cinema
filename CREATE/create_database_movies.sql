@@ -6,9 +6,9 @@ DROP TABLE IF EXISTS movies;
 
 /* Je crée la table movies */
 CREATE TABLE movies (
-   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
    name VARCHAR(25) NOT NULL,
-   year SMALLINT NOT NULL,
+   year SMALLINT(4) NOT NULL,
    synopsis TEXT(5000) NOT NULL,
    gender varchar(25) NOT NULL,
    director VARCHAR(25) NOT NULL,

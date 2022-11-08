@@ -6,10 +6,10 @@ DROP TABLE IF EXISTS theaters;
 
 /* Je crée la table theaters */
 CREATE TABLE theaters (
-   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
    name VARCHAR(25) NOT NULL,
    address VARCHAR(25) NOT NULL,
-   phone_number INT NOT NULL,
-   zip_code SMALLINT NOT NULL,
+   phone_number INT(14) NOT NULL,
+   zip_code SMALLINT(5) NOT NULL,
    city VARCHAR(20) NOT NULL
 );

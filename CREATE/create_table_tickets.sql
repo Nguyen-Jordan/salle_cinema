@@ -6,12 +6,12 @@ DROP TABLE IF EXISTS tickets;
 
 /* Je crée la table tickets */
 CREATE TABLE tickets (
-    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
     date DATETIME NOT NULL,
-    total_ticket INT NOT NULL,
+    total_ticket INT(11) NOT NULL,
     total_amount DECIMAL(10,2) NOT NULL,
-    seat_id INT NOT NULL,
-    costumer_id INT NOT NULL,
+    seat_id INT(11) NOT NULL,
+    costumer_id INT(11) NOT NULL,
     FOREIGN KEY (seat_id) REFERENCES seats (id),
     FOREIGN KEY (costumer_id) REFERENCES clients (id)
 );
